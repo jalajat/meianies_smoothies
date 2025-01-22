@@ -48,10 +48,10 @@ if time_to_insert:
     name_output+='!'
    # st.write(name_output)
     st.success(name_output,icon="✅")
-
+#New Section to smoothiefroot nutrition infromation
 import requests
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json()
    
 
 
