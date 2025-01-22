@@ -48,6 +48,10 @@ if time_to_insert:
     name_output+='!'
    # st.write(name_output)
     st.success(name_output,icon="✅")
+
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
    
 
 
